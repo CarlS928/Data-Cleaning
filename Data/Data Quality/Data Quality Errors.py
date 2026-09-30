@@ -5,7 +5,7 @@ Profiles Data/Raw/dim_client_raw.csv and prints every data quality issue as a
 table: #, Column, Issue, Rows affected, Details.
 
 Run from anywhere:
-    python Data/Clean/identified_errors.py
+    python "Data/Data Quality/Data Quality Errors.py"
 """
 
 from datetime import date
