@@ -1,0 +1,14 @@
+from_table,from_column,to_table,to_column,cardinality,relationship_type
+fact_fees,client_id,dim_client,client_id,many-to-one,fact-to-dimension
+fact_fees,advisor_id,dim_advisor,advisor_id,many-to-one,fact-to-dimension
+fact_fees,fee_date,dim_date,date,many-to-one,fact-to-dimension
+fact_portfolio_snapshot,client_id,dim_client,client_id,many-to-one,fact-to-dimension
+fact_portfolio_snapshot,advisor_id,dim_advisor,advisor_id,many-to-one,fact-to-dimension
+fact_portfolio_snapshot,benchmark_id,dim_benchmark,benchmark_id,many-to-one,fact-to-dimension
+fact_portfolio_snapshot,snapshot_date,dim_date,date,many-to-one,fact-to-dimension
+fact_transactions,client_id,dim_client,client_id,many-to-one,fact-to-dimension
+fact_transactions,advisor_id,dim_advisor,advisor_id,many-to-one,fact-to-dimension
+fact_transactions,security_id,dim_security,security_id,many-to-one,fact-to-dimension
+fact_transactions,txn_date,dim_date,date,many-to-one,fact-to-dimension
+dim_client,advisor_id,dim_advisor,advisor_id,many-to-one,dimension-to-dimension
+dim_security,benchmark_id,dim_benchmark,benchmark_id,many-to-one,dimension-to-dimension
